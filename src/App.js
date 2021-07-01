@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import React from "react";
+import PersistentDrawerLeft from "./components/PersistentDrawerLeft";
+import Slider from "./components/Slider";
+import Home from "./components/Home";
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      light: "#ce433b",
+      main: "#960014",
+      dark: "#610000",
+      contrastText: "#fff",
+    },
+    secondary: {
+      light: "#4a428b",
+      main: "#191b5d",
+      dark: "#000033",
+      contrastText: "#fff",
+    },
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <PersistentDrawerLeft />
+        <Slider />
+        <Home />
+      </div>
+    </ThemeProvider>
   );
 }
 
