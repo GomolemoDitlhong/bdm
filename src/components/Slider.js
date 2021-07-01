@@ -6,14 +6,6 @@ import image2 from "../images/dumper-2129356_1920.jpg";
 import image3 from "../images/industry-2023592_1920.jpg";
 
 function Slider() {
-  // const [showState, setShow] = useState({
-  //   show: false,
-  // });
-
-  // useEffect(() => {
-  //   setTimeout(() => setShow({ show: true }), 500);
-  // });
-
   return (
     <div>
       <Image src={image1} aspectRatio={16 / 11} />
