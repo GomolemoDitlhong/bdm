@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import CarouselNode from "./CarouselNode";
+import Service from "./Service";
 import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Container } from "@material-ui/core";
@@ -20,7 +20,7 @@ const styles = makeStyles((theme) => ({
     paddingRight: "15px",
   },
   slider: {
-    "& button": {
+    "& > button": {
       width: "36px",
       height: "36px",
       "&:before": {
@@ -57,26 +57,26 @@ function Carousel() {
         <Divider />
         <Typography variant="h2">Services</Typography>
         <Slider className={classes.slider} {...settings}>
-          <CarouselNode title="Service 1" link="service1">
-            Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur.
-          </CarouselNode>
-          <CarouselNode title="Service 2" link="service2">
-            Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur.
-          </CarouselNode>
-          <CarouselNode title="Service 3" link="service3">
-            Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur.
-          </CarouselNode>
-          <CarouselNode title="Service 4" link="service4">
-            Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur.
-          </CarouselNode>
+          <Service title="Service 1" link="service1">
+            Dolor sit amet, consectetur cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo con. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur.
+          </Service>
+          <Service title="Service 2" link="service2">
+            Dolor sit amet, consectetur sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo equat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur.
+          </Service>
+          <Service title="Service 3" link="service3">
+            Dolor sit amet, consectetur sicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo con. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur.
+          </Service>
+          <Service title="Service 4" link="service4">
+            Dolor sit amet, consectetur adipisi elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo quat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur.
+          </Service>
         </Slider>
       </Container>
     </div>

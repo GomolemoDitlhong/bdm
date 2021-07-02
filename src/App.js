@@ -4,6 +4,7 @@ import PersistentDrawerLeft from "./components/PersistentDrawerLeft";
 import Slider from "./components/Slider";
 import Home from "./components/Home";
 import Services from "./components/Services";
+import About from "./components/About";
 import { amber } from "@material-ui/core/colors";
 // import "./carousel.css";
 
@@ -60,6 +61,7 @@ function App() {
       <div className="App">
         <PersistentDrawerLeft />
         <Slider />
+        <About />
         <Services />
         <Home />
       </div>

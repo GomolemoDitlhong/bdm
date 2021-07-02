@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
+import LinkButton from "./LinkedButton";
 
 const height = "370px";
 const styles = makeStyles((theme) => ({
@@ -56,30 +57,7 @@ const styles = makeStyles((theme) => ({
   },
 }));
 
-const LinkButton = withStyles((theme) => ({
-  root: {
-    fontSize: "14px",
-    lineHeight: "14px",
-    color: "#fff",
-    display: "inline-block",
-    padding: "12px 32px",
-    borderRadius: "35px",
-    background: theme.palette.primary.main,
-    "&:hover": {
-      backgroundColor: theme.palette.primary.dark,
-      borderColor: theme.palette.primary.dark,
-    },
-    "&:active": {
-      backgroundColor: theme.palette.primary.dark,
-      borderColor: theme.palette.primary.dark,
-    },
-    "&:focus": {
-      boxShadow: "0 0 0 0.2rem rgba(0,123,255,.5)",
-    },
-  },
-}))(Button);
-
-function CarouselNode(props) {
+function Service(props) {
   const classes = styles();
   const { title, children, link } = props;
   return (
@@ -109,4 +87,4 @@ function CarouselNode(props) {
   );
 }
 
-export default CarouselNode;
+export default Service;
