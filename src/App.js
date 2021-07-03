@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import About from "./components/About";
 import { amber } from "@material-ui/core/colors";
 // import "./carousel.css";
+import Why from "./components/Why";
 
 const theme = createMuiTheme({
   breakpoints: {
@@ -52,6 +53,16 @@ const theme = createMuiTheme({
       marginBottom: "1.25rem",
       color: "#191b5d",
     },
+    subtitle1: {
+      textAlign: "center",
+      color: "#ffcc00",
+      fontSize: "1.575rem",
+      marginBottom: "30px",
+    },
+    body2: {
+      fontSize: "1.125rem",
+      color: "#ffffff",
+    },
   },
 });
 
@@ -63,7 +74,7 @@ function App() {
         <Slider />
         <About />
         <Services />
-        <Home />
+        <Why />
       </div>
     </ThemeProvider>
   );
