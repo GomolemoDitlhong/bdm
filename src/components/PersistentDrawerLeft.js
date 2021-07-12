@@ -14,7 +14,7 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import FacebookIcon from "@material-ui/icons/Facebook";
+import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { StateContext } from "../StateContext";
 
@@ -65,13 +65,35 @@ const styles = makeStyles((theme) => ({
   },
   toolbar: {
     display: "flex",
+    paddingTop: "5px",
+    paddingBottom: "5px",
     justifyContent: "space-between",
+    borderBottom: "3px white solid",
   },
   heading: {
     flexGrow: 1,
+    fontSize: 24,
   },
   listItemText: {
     color: theme.palette.grey[500],
+  },
+  follow: {
+    marginBottom: 10,
+    marginTop: 10,
+    paddingTop: 5,
+    paddingBottom: 5,
+    paddingRight: 24,
+    marginRight: 24,
+    borderRight: "2px solid #d3d3d3",
+  },
+  instagam: {
+    height: 31,
+    width: 31,
+  },
+  twitter: {
+    marginLeft: 14,
+    height: 31,
+    width: 31,
   },
 }));
 
@@ -107,15 +129,15 @@ function PersistentDrawerLeft() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.heading} noWrap>
+          <Typography variant="h5" className={classes.heading} noWrap>
             Big Data Mining
           </Typography>
-          <Typography color="warning" variant="subtitle" noWrap>
-            Follow |
+          <Typography className={classes.follow} color="warning" variant="textSecondary" noWrap>
+            Follow
           </Typography>
 
-          <FacebookIcon fontSize="default" />
-          <TwitterIcon fontSize="default" />
+          <InstagramIcon className={classes.instagam} color="secondary" fontSize="large" />
+          <TwitterIcon className={classes.twitter} color="secondary" fontSize="large" />
         </Toolbar>
       </AppBar>
       <Drawer
