@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles, Container, Typography } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import up from "../images/up.png";
 import twitter from "../images/twitter.png";
 import instagram from "../images/instagram.png";
@@ -33,7 +34,7 @@ const styles = makeStyles((theme) => ({
 
     "& a": {
       transition: "all 0.5s ease-in-out",
-      fontSize: "15px",
+      fontSize: "1rem",
       color: "white",
       paddingBottom: "16px",
       lineHeight: "1",
@@ -75,7 +76,7 @@ const styles = makeStyles((theme) => ({
     backgroundRepeatX: "no-repeat",
     backgroundRepeatY: "no-repeat",
     top: "120px",
-    zIndex: "200000",
+    zIndex: "2",
     padding: "30px",
     maxWidth: "100%",
     boxShadow: "2px 4px 1px #00000075",
@@ -95,7 +96,7 @@ function SubMenu() {
               <p>.</p>
             </div>
           </div>
-          <div class="mdl-cell mdl-cell--3-col" id="block-views-block-links-block-1">
+          <div class="mdl-cell mdl-cell-3-col" id="block-views-block-links-block-1">
             <h2>Links</h2>
             <div class="content">
               <div>
@@ -103,27 +104,27 @@ function SubMenu() {
                   <div class="views-row">
                     <div class="views-field views-field-title">
                       <span class="field-content">
-                        <a href="/node/5" hreflang="en">
+                        <Link to="/about" style={{ textDecoration: "none" }}>
                           About
-                        </a>
+                        </Link>
                       </span>
                     </div>
                   </div>
                   <div class="views-row">
                     <div class="views-field views-field-title">
                       <span class="field-content">
-                        <a href="/node/10" hreflang="en">
+                        <Link to="/whybigdata" style={{ textDecoration: "none" }}>
                           Why Big Data Mining?
-                        </a>
+                        </Link>
                       </span>
                     </div>
                   </div>
                   <div class="views-row">
                     <div class="views-field views-field-title">
                       <span class="field-content">
-                        <a href="/node/13" hreflang="en">
+                        <Link to="/whybigdata" style={{ textDecoration: "none" }}>
                           What is Big Data Mining?
-                        </a>
+                        </Link>
                       </span>
                     </div>
                   </div>
@@ -131,7 +132,7 @@ function SubMenu() {
               </div>
             </div>
           </div>
-          <div class="mdl-cell mdl-cell--3-col" id="block-views-block-service-links-block-1">
+          <div class="mdl-cell mdl-cell-3-col" id="block-views-block-service-links-block-1">
             <h2>Service</h2>
 
             <div class="content">
@@ -140,36 +141,36 @@ function SubMenu() {
                   <div class="views-row">
                     <div class="views-field views-field-title">
                       <span class="field-content">
-                        <a href="/node/6" hreflang="en">
+                        <Link to="/service1" style={{ textDecoration: "none" }}>
                           Service 1
-                        </a>
+                        </Link>
                       </span>
                     </div>
                   </div>
                   <div class="views-row">
                     <div class="views-field views-field-title">
                       <span class="field-content">
-                        <a href="/node/7" hreflang="en">
+                        <Link to="/service1" style={{ textDecoration: "none" }}>
                           Service 2
-                        </a>
+                        </Link>
                       </span>
                     </div>
                   </div>
                   <div class="views-row">
                     <div class="views-field views-field-title">
                       <span class="field-content">
-                        <a href="/node/8" hreflang="en">
+                        <Link to="/service1" style={{ textDecoration: "none" }}>
                           Service 3
-                        </a>
+                        </Link>
                       </span>
                     </div>
                   </div>
                   <div class="views-row">
                     <div class="views-field views-field-title">
                       <span class="field-content">
-                        <a href="/node/9" hreflang="en">
+                        <Link to="/service4" style={{ textDecoration: "none" }}>
                           Service 4
-                        </a>
+                        </Link>
                       </span>
                     </div>
                   </div>
@@ -177,7 +178,7 @@ function SubMenu() {
               </div>
             </div>
           </div>
-          <div id="block-contacts" class="mdl-cell mdl-cell--3-col">
+          <div id="block-contacts" class="mdl-cell mdl-cell-3-col">
             <h2>Contacts</h2>
             <div class="content">
               <div>

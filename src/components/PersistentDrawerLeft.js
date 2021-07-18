@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -19,6 +20,16 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import { StateContext } from "../StateContext";
 
 const drawerWidth = 240;
+
+const menuLinks = [
+  { name: "Home", link: "/" },
+  { name: "About", link: "/about" },
+  { name: "Background", link: "/background" },
+  { name: "Service 1", link: "/service1" },
+  { name: "Service 2", link: "/service2" },
+  { name: "Service 3", link: "/service3" },
+  { name: "Service 4", link: "/service4" },
+];
 
 const styles = makeStyles((theme) => ({
   root: {
@@ -55,9 +66,10 @@ const styles = makeStyles((theme) => ({
   },
   drawerHeader: {
     display: "flex",
+    borderBottom: "3px solid #000",
     alignItems: "center",
     backgroundColor: theme.palette.primary.dark,
-    padding: theme.spacing(0, 2),
+    padding: theme.spacing(1, 2),
     color: theme.palette.grey[300],
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
@@ -76,6 +88,7 @@ const styles = makeStyles((theme) => ({
   },
   listItemText: {
     color: theme.palette.grey[500],
+    textDecoration: "none",
   },
   follow: {
     marginBottom: 10,
@@ -135,7 +148,6 @@ function PersistentDrawerLeft() {
           <Typography className={classes.follow} color="warning" variant="textSecondary" noWrap>
             Follow
           </Typography>
-
           <InstagramIcon className={classes.instagam} color="secondary" fontSize="large" />
           <TwitterIcon className={classes.twitter} color="secondary" fontSize="large" />
         </Toolbar>
@@ -157,9 +169,11 @@ function PersistentDrawerLeft() {
         </div>
         <Divider />
         <List>
-          {["About", "Background", "Service 1", "Service 2"].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemText className={classes.listItemText} primary={text} />
+          {menuLinks.map((page, index) => (
+            <ListItem button key={index}>
+              <Link to={page.link} className={classes.listItemText}>
+                {page.name}
+              </Link>
             </ListItem>
           ))}
         </List>

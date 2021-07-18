@@ -1,9 +1,9 @@
 import React from "react";
-import Slider from "./components/Slider";
-import Services from "./components/Services";
-import About from "./components/About";
-import Why from "./components/Why";
-import Creative from "./components/Creative";
+import Slider from "../components/Slider";
+import Services from "../components/Services";
+import About from "../components/About";
+import Why from "../components/Why";
+import Creative from "../components/Creative";
 
 function Home() {
   return (
