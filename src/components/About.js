@@ -55,9 +55,10 @@ function About() {
                 <div class="views-field views-field-body">
                   <div class="field-content">
                     <Typography variant="body1" paragraph>
-                      Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                      velit esse cillum dolore eu fugiat nulla pariatur.
+                      Botswana landscape is bit slower in taking advantages of technology, most parastatals and businesses processes are manual, 
+                        and paper based. BDM is a new Generation Technology Company that aim to drive the use of paper down. In this scenario BDM has hungry, 
+                          dedicated development teams, Combining business and industry, knowledge with technology, who work closely with clients to produce 
+                          comprehensive products.
                     </Typography>
                   </div>
                 </div>
